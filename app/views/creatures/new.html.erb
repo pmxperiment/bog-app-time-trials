@@ -1,0 +1,7 @@
+<!-- app/views/creatures/new.html.erb -->
+<h1>Create a New Creature</h1>
+<%= form_for @creature do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_area :description %>
+  <%= f.submit "Save New Creature" %>
+<% end %>
